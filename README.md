@@ -81,14 +81,6 @@ Cada persona puede hacer esto en su propia página así:
 
   <div id="footer"></div>
 
-  <script>
-    fetch('shared/header.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('header').innerHTML = data);
-    
-    fetch('shared/footer.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('footer').innerHTML = data);
-  </script>
+  <script src="js/includeShared.js"></script>
 </body>
 
