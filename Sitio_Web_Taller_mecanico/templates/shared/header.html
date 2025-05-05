@@ -2,14 +2,14 @@
   <div class="logo"><img src="{{ url_for('static', filename='/img/7934918 (Custom).jpg') }}" alt="Logo"></div>
   <div class="menu">
     <nav style="text-align: center; margin-bottom: 20px;">
-      <a href="../index.html">INICIO</a> |
-      <a href="../nosotros.html">NOSOTROS</a> |
-      <a href="../equipo.html">EQUIPO</a> |
-      <a href="../clientes.html">CLIENTES</a> |
-      <a href="../productos.html">PRODUCTOS</a> |
-      <a href="../promociones.html">PROMOCIONES</a> |
-      <a href="../sucursales.html">SUCURSALES</a> |
-      <a href="../login.html">LOGIN</a>
+      <a href="{{ url_for('index') }}">INICIO</a> |
+      <a href="{{ url_for('nosotros') }}">NOSOTROS</a> |
+      <a href="{{ url_for('equipo') }}">EQUIPO</a> |
+      <a href="{{ url_for('clientes') }}">CLIENTES</a> |
+      <a href="{{ url_for('productos') }}">PRODUCTOS</a> |
+      <a href="{{ url_for('promociones') }}">PROMOCIONES</a> |
+      <a href="{{ url_for('sucursales') }}">SUCURSALES</a> |
+      <a href="{{ url_for('login') }}">LOGIN</a>
     </nav>
   </div>
   <link rel="stylesheet" href="{{ url_for('static', filename='/css/header.css') }}">
