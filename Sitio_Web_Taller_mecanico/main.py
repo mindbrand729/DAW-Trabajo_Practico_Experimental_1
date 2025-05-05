@@ -26,9 +26,9 @@ def login():
 def productos():
     return render_template('productos.html')
 
-@app.route('/promocion')
-def promocion():
-    return render_template('promocion.html')
+@app.route('/promociones')
+def promociones():
+    return render_template('promociones.html')
 
 @app.route('/sucursales')
 def sucursales():
