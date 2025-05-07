@@ -11,11 +11,14 @@
         
         <main>
 
-            <!-- Aquí va el contenido de la pagina -->
+            <h1 class="page-title">"NUESTRO EQUIPO"</h1>
+            <div class="team-grid" id="team-container"></div>
+            </div>
             
         </main>
         
         {% include 'shared/footer.html' %}
-        <script src="js/includeShared.js"></script>
+        <script src="{{ url_for('static', filename='js/includeShared.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/equipo.js') }}"></script>
     </body>
 </html>
