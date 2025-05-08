@@ -72,7 +72,7 @@ function loadTeamMembers() {
 // Función para obtener la ruta correcta de las imágenes
 function getImagePath(imageName) {
     // Ajusta esta ruta según la estructura de carpetas de tu proyecto
-    return `/static/img/team/${imageName}`;
+    return `static/img/team/${imageName}`;
 }
 
 // Cargar los miembros del equipo cuando la página esté lista
