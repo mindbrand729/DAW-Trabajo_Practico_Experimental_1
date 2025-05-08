@@ -5,23 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Clientes</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/clientes.css') }}">
 </head>
     <body>
         {% include 'shared/header.html' %}
         
         <main>
-
-            <!-- Aquí va el contenido de la pagina -->
+            
             <h1 class="page-title">"Clientes"</h1>
             <div class="clientes-grid" id="cliente-container"></div>
-            
-            </div>
-            
-            <script src="{{ url_for('static', filename='js/clientes.js') }}"></script>
-
             
         </main>
         
         {% include 'shared/footer.html' %}
+        <script src="{{ url_for('static', filename='js/clientes.js') }}"></script>
     </body>
 </html>

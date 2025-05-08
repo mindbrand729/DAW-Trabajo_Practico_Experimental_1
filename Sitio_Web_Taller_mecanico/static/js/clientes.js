@@ -1,4 +1,4 @@
-st clienteslist = [
+const clienteslist = [
       { nombre: "Juan Pérez", email: "juanperez@hotmail.com", ci: "0925610900", telefono: "0991594567", image:"cliente1.jpg" },
       { nombre: "Ana Gómez", email: "gomezana12@yahoo.com", ci: "1200040506", telefono: "0985644567", image:"cliente6.jpg" },
       { nombre: "Carlos Ruiz", email: "carlosrzavala@google.com", ci: "1304506077", telefono: "0979674567", image:"cliente11.jpg" },
