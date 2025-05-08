@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Principal</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/carrusel.css') }}">
 </head>
@@ -13,7 +14,7 @@
         <main>
             <section id="carousel">
                 <div id="blur-background"></div> 
-                <img id="carousel-image" src="{{ url_for('static', filename='img/carrusel/climatizacion.jpg') }}" alt="Imagen Carrusel">
+                <div class="carousel-track" id="carousel-track"></div>
                 <button id="prevBtn">&#10094;</button>
                 <button id="nextBtn">&#10095;</button>
             </section>
@@ -53,7 +54,6 @@
                     </p>
                 </div>
             </section>
-            <div class="bloque"><p></p></div>
         </main>
 
         {% include 'shared/footer.html' %}

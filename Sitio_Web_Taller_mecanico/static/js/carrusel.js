@@ -1,21 +1,38 @@
 let current = 0;
-const imageElement = document.getElementById("carousel-image");
 const blurBackground = document.getElementById("blur-background");
+const carouselTrack = document.getElementById("carousel-track");
 
-function showImage(index) {
-  const newSrc = images[index];
-  imageElement.src = newSrc;
-  blurBackground.style.backgroundImage = `url(${newSrc})`;
+function showImage(index, direction = "right") {
+  const newImg = document.createElement("img");
+  newImg.src = images[index];
+  newImg.className = "carousel-img";
+
+  // Animación de entrada según dirección
+  newImg.classList.add(direction === "right" ? "slide-in-right" : "slide-in-left");
+
+  const currentImg = carouselTrack.querySelector(".carousel-img");
+  if (currentImg) {
+    // Animación de salida según dirección opuesta
+    currentImg.classList.add(direction === "right" ? "slide-out-left" : "slide-out-right");
+    currentImg.addEventListener("animationend", () => {
+      currentImg.remove(); // elimina cuando termine la animación
+    });
+  }
+
+  carouselTrack.appendChild(newImg);
+  blurBackground.style.backgroundImage = `url(${images[index]})`;
 }
 
 function nextImage() {
-  current = (current + 1) % images.length;
-  showImage(current);
+  const nextIndex = (current + 1) % images.length;
+  current = nextIndex;
+  showImage(current, "right");
 }
 
 function prevImage() {
-  current = (current - 1 + images.length) % images.length;
-  showImage(current);
+  const prevIndex = (current - 1 + images.length) % images.length;
+  current = prevIndex;
+  showImage(current, "left");
 }
 
 function resetAutoSlide() {
