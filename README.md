@@ -42,32 +42,40 @@ Estructura que tendrá el proyecto:
 
 sitio-web/
 │
-├── index.html                  → Página Principal (Persona 1)
-├── nosotros.html              → Página de Nosotros (Persona 2)
-├── equipo.html                → Página de Equipo (Persona 3)
-├── clientes.html              → Página de Clientes (Persona 4)
-├── promociones.html           → Página de Promociones (Persona 5)
-├── productos.html             → Página de Productos (Persona 5)
-├── sucursales.html            → Página de Sucursales (Persona 6)
-├── login.html                 → Página de Login (Persona 6)
+├── entornoGrupo17/
+|   ├── Include/
+│   ├── Lib/
+│   ├── Scripts/
+│   └── pyvenv.cfg
+|
+├── static/
+│   ├── css/
+|       └── estilos.css            → Estilos generales (colores, tipografías, layout común)
+│   ├── img/
+│       └── [imágenes de uso común o individuales]
+│   └── js/
+|       ├── equipo.js              → JavaScript para generar contenido en equipo.html
+│       ├── promociones.js         → JavaScript para generar contenido en promociones.html
+│       ├── sucursales.js          → JavaScript para generar contenido en sucursales.html
+│       └── login.js               → Validación de usuario en login.html
+|
+├── templates/
+│   ├── shared/
+│       ├── header.html            → Encabezado común (menú de navegación)
+│       └── footer.html            → Pie de página común
+|   ├── index.html                 → Página Principal (Persona 1)
+|   ├── nosotros.html              → Página de Nosotros (Persona 2)
+|   ├── equipo.html                → Página de Equipo (Persona 3)
+|   ├── clientes.html              → Página de Clientes (Persona 4)
+|   ├── promociones.html           → Página de Promociones (Persona 5)
+|   ├──  productos.html            → Página de Productos (Persona 5)
+|   ├── sucursales.html            → Página de Sucursales (Persona 6)
+|   └── login.html                 → Página de Login (Persona 6)
 │
-├── css/
-│   └── estilos.css            → Estilos generales (colores, tipografías, layout común)
 │
-├── js/
-│   ├── equipo.js              → JavaScript para generar contenido en equipo.html
-│   ├── promociones.js         → JavaScript para generar contenido en promociones.html
-│   ├── sucursales.js          → JavaScript para generar contenido en sucursales.html
-│   └── login.js               → Validación de usuario en login.html
+├── main.py 
 │
-├── img/
-│   └── [imágenes de uso común o individuales]
-│
-├── shared/
-│   ├── header.html            → Encabezado común (menú de navegación)
-│   └── footer.html            → Pie de página común
-│
-└── README.md                  → (Opcional) Notas o instrucciones del grupo
+└── README.md                      → (Opcional) Notas o instrucciones del grupo
 
 Dado que no se puede usar backend, se recomienda usar JavaScript para insertar el header y
 footer dinámicamente desde los archivos shared/header.html y shared/footer.html
@@ -75,12 +83,14 @@ footer dinámicamente desde los archivos shared/header.html y shared/footer.html
 Cada persona puede hacer esto en su propia página así:
 
 <body>
-  <div id="header"></div>
+    {% include 'shared/header.html' %}
+        
+        <main>
 
-  <!-- Contenido de la página -->
-
-  <div id="footer"></div>
-
-  <script src="js/includeShared.js"></script>
+            <!-- Aquí va el contenido de la pagina -->
+            
+        </main>
+        
+    {% include 'shared/footer.html' %}
 </body>
 
