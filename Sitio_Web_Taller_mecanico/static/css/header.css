@@ -1,6 +1,4 @@
 header {
-    grid-column: 1 / -1;
-    grid-row: 1 / 1;
     justify-content: center;
     align-content: center;
     border-bottom: 1px solid #ddd;
@@ -9,16 +7,34 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0;
     z-index: 1000;
-    background-color: #cf9292;
+}
+
+.logo {
+    background-color: #ABE4FF; /* Fondo rosado */
+    width: 100%;
+    text-align: center;
+    padding: 3px 0px;
+}
+
+.menu {
+    background-color: #FFABAB;
+    width: 100%;
+    padding: 22px 0px;
+    border-bottom: 1px solid #ddd;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    margin: 0 10px;
+    margin: 10px 10px;
     font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
   
 nav a:hover {
@@ -33,6 +49,13 @@ nav a:hover {
     }
   
     nav a {
-        margin: 5px;
+        margin: 5px 5px;
+    }
+
+    .menu {
+        height: 90px;
+        text-align: center;
+        justify-content: center;
+        padding: 20px 0px;
     }
 }
