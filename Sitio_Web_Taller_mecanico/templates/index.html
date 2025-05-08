@@ -4,30 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Principal</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='/css/estilos.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/carrusel.css') }}">
 </head>
     <body>
         {% include 'shared/header.html' %}
 
         <main>
             <section id="carousel">
-                <div>
-                    <p>Cambio realizado</p>
-                </p>
-                <!-- Aquí va el carrusel de 7 imágenes -->
+                <img id="carousel-image" src="{{ url_for('static', filename='img/carrusel/climatizacion.jpg') }}" alt="Imagen Carrusel">
+                <button id="prevBtn">&#10094;</button>
+                <button id="nextBtn">&#10095;</button>
             </section>
             <section id="mision-vision">
-            <div class="mision">
-                <h3>MISIÓN</h3>
-                <p>Texto de la misión del sitio web</p>
-            </div>
-            <div class="vision">
-                <h3>VISIÓN</h3>
-                <p>Texto de la visión del sitio web</p>
-            </div>
+                <div class="mision">
+                    <h3>MISIÓN</h3>
+                    <p>Texto de la misión del sitio web</p>
+                </div>
+                <div class="vision">
+                    <h3>VISIÓN</h3>
+                    <p>Texto de la visión del sitio web</p>
+                </div>
             </section>
         </main>
 
         {% include 'shared/footer.html' %}
+        <script>
+            const images = [
+              "{{ url_for('static', filename='img/carrusel/climatizacion.jpg') }}",
+              "{{ url_for('static', filename='img/carrusel/desengrasantes-2.jpg') }}",
+              "{{ url_for('static', filename='img/carrusel/climatizacion.jpg') }}",
+              "{{ url_for('static', filename='img/carrusel/desengrasantes-2.jpg') }}",
+              "{{ url_for('static', filename='img/carrusel/climatizacion.jpg') }}",
+              "{{ url_for('static', filename='img/carrusel/desengrasantes-2.jpg') }}",
+              "{{ url_for('static', filename='img/carrusel/climatizacion.jpg') }}"
+            ];
+        </script>
+        <script src="{{ url_for('static', filename='js/carrusel.js') }}"></script>
     </body>
 </html>

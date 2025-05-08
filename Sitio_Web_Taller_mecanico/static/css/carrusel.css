@@ -1,0 +1,59 @@
+/* Carrusel principal */
+#carousel {
+    position: relative;
+    margin: 30px 10px;
+    max-width: 100%;
+    height: 500px; /* altura alargada para que se note */
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  /* Imagen dentro del carrusel */
+#carousel img {
+    position: relative;
+    z-index: 1;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+  
+  /* Efecto sutil al pasar el mouse */
+  #carousel img:hover {
+    transform: scale(1.02);
+}
+  
+  /* Botones de navegación */
+#carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+#carousel button:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+  
+#prevBtn {
+    left: 15px;
+}
+
+#nextBtn {
+    right: 15px;
+}
+  
