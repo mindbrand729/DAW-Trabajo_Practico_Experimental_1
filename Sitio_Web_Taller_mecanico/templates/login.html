@@ -11,12 +11,20 @@
         {% include 'shared/header.html' %}
         
         <main>
-
-          <h1 class="page-title">LOGIN</h1>
-          <div class="team-grid" id="team-container"></div>
-          
-      <button type="submit">Iniciar</button>
+          <div class="login-container">
+            <h1>Iniciar sesión</h1>
+            <form id="login-form">
+              <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" placeholder="Ingrese su usuario" required>
+              </div>
+              <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+              </div>
+            <button type="submit">Iniciar</button>
     </form>
+  </div>
 
           
             
