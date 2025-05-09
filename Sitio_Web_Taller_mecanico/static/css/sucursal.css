@@ -7,3 +7,30 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+  
+  .container {
+    margin-top: 2rem;
+  }
+  
+  .col-2 {
+    margin: 1rem;
+  }
+  
+  img.rounded-circle {
+    border: 2px solid #007bff;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  img.rounded-circle:hover {
+    transform: scale(1.1);
+  }
+  
+  .border-primary {
+    border-width: 2px !important;
+  }
+  
+  .border {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
