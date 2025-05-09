@@ -1,4 +1,4 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('team-container').addEventListener('submit', function(event) {
       event.preventDefault();
 
       const usuario = document.getElementById('username').value;
