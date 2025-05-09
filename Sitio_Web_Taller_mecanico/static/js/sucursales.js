@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
   const sucursales = [
-    { imagen: 'SM/1.jpg', direccion: 'Av. Alvaro Ochoa', ciudad: 'Machala' },
-    { imagen: 'SM/2.jpg', direccion: 'Av. Garcias 34', ciudad: 'Machala' },
-    { imagen: 'SM/3.jpg', direccion: 'Av. Principal Cruz Vera', ciudad: 'Machala' },
-    { imagen: 'SM/4.jpg', direccion: 'Av. Ochoa Leon', ciudad: 'Machala' },
-    { imagen: 'SM/55.jpg', direccion: 'Av. Morales 234', ciudad: 'Machala' }
+    { imagen: '1.jpg', direccion: 'Av. Alvaro Ochoa', ciudad: 'Machala' },
+    { imagen: '2.jpg', direccion: 'Av. Garcias 34', ciudad: 'Machala' },
+    { imagen: '3.jpg', direccion: 'Av. Principal Cruz Vera', ciudad: 'Machala' },
+    { imagen: '4.jpg', direccion: 'Av. Ochoa Leon', ciudad: 'Machala' },
+    { imagen: '55.jpg', direccion: 'Av. Morales 234', ciudad: 'Machala' }
   ];
 
   const container = document.getElementById('team-container');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     col.classList.add('col-2');
 
     const img = document.createElement('img');
-    img.src = sucursal.imagen;
+    img.src = 'SM/'+ sucursal.imagen;
     img.alt = `Sucursal ${sucursal.ciudad}`;
     img.classList.add('sucursal-img');
 
