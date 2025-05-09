@@ -7,30 +7,43 @@
     text-transform: uppercase;
     font-weight: bold;
 }
-  
-  .container {
-    margin-top: 2rem;
-  }
-  
-  .col-2 {
-    margin: 1rem;
-  }
-  
-  img.rounded-circle {
-    border: 2px solid #007bff;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  img.rounded-circle:hover {
-    transform: scale(1.1);
-  }
-  
-  .border-primary {
-    border-width: 2px !important;
-  }
-  
-  .border {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
+  /* Imágenes de las sucursales */
+.sucursal-img {
+  width: 130px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #3498db;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.sucursal-img:hover {
+  transform: scale(1.05);
+}
+
+/* Contenedores de la  información de las sucursales */
+.sucursal-info {
+  max-width: 300px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.sucursal-info:hover {
+  background-color: #d5dbdb;
+}
+
+/* Estilo para el texto dentro de los contenedores */
+.sucursal-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.sucursal-info strong {
+  color: #2980b9;
+}
