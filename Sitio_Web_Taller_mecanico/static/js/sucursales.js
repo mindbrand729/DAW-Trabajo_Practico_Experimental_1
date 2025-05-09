@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const col = document.createElement('div');
     col.classList.add('col-2');
 
+    const sucursalContainer = document.createElement('div');
+    sucursalContainer.classList.add('sucursal-container');
+
     const img = document.createElement('img');
     img.src = sucursal.imagen;
     img.alt = `Sucursal ${sucursal.ciudad}`;
@@ -50,9 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
     info.appendChild(direccion);
     info.appendChild(ciudad);
 
-    col.appendChild(img);
-    col.appendChild(info);
+    sucursalContainer.appendChild(img);
+    sucursalContainer.appendChild(info);
 
+    col.appendChild(sucursalContainer);
     container.appendChild(col);
   });
 });
+  
