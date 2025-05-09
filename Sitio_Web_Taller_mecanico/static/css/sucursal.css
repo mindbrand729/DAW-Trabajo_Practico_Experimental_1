@@ -14,6 +14,12 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  #team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap;
+}
  }
 /* Imágenes de las sucursales */
 .sucursal-img {
