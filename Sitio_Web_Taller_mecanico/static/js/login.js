@@ -1,12 +1,21 @@
-document.getElementById('team-container').addEventListener('submit', function(event) {
-      event.preventDefault();
+/*Usuario y contraseña*/
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('login-form');
+  const validCredentials = {
+    username: 'unemi',
+    password: 'web2025'
+  };
 
-      const usuario = document.getElementById('username').value;
-      const contrasena = document.getElementById('password').value;
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-      if (usuario === 'unemi' && contrasena === 'web2025') {
-        alert('Inicio de sesión exitoso');
-      } else {
-        alert('Credenciales incorrectas');
-      }
-    });
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username === validCredentials.username && password === validCredentials.password) {
+      alert('Inicio de sesión exitoso');
+    } else {
+      alert('Credenciales incorrectas');
+    }
+  });
+});
