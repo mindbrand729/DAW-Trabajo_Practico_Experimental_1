@@ -2,8 +2,7 @@
 .page-title {
   text-align: center;
   font-size: 2.5rem;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin: 100px 0;
   color: #141010;
   text-transform: uppercase;
   font-weight: bold;
@@ -14,8 +13,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 110vh;
+  height: 1vh;
   background-color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 .login-container {
   background-color: #DDFFAB;
