@@ -1,68 +1,58 @@
-/*Las sucursales y direccion*/
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   const sucursales = [
     {
-      img: '1.jpg',
-      Direccion: 'Av. Rosales 304 ',
-      Ciudad: 'Machala'
+      imagen: '1.jpg',
+      direccion: 'Av. Alvaro Ochoa',
+      ciudad: 'Machala'
     },
     {
-      img: '2.jpg',
-      Direccion: 'Av. Cordova y Leon',
-      Ciudad: 'Machala'
+      imagen: '2.jpg',
+      direccion: 'Av. Garcias 34',
+      ciudad: 'Machala'
     },
     {
-      img: '3.jpg',
-      Direccion: 'Av. Pricipal Cruz Vera',
-      Ciudad: 'Machala'
+      imagen: '3.jpg',
+      direccion: 'Av. Principal Cruz Vera',
+      ciudad: 'Machala'
     },
     {
-      img: '4.jpg',
-      Direccion: 'Av. Ochoa Leon',
-      Ciudad: 'Machala'
+      imagen: '4.jpg',
+      direccion: 'Av. Ochoa Leon',
+      ciudad: 'Machala'
     },
     {
-      img: '55.jpg',
-      Direccion: 'Av. Morales 234',
-      Ciudad: 'Machala'
+      imagen: '55.jpg',
+      direccion: 'Av. Morales 234',
+      ciudad: 'Machala'
     }
   ];
 
-  const row = document.createElement('div');
-  row.className = 'row justify-content-center';
+  const container = document.getElementById('team-container');
 
   sucursales.forEach(sucursal => {
     const col = document.createElement('div');
-    col.className = 'col-2';
+    col.classList.add('col-2');
 
     const img = document.createElement('img');
-    img.src = sucursal.img;
-    img.className = 'rounded-circle mb-2';
-    img.alt = 'Cinque Terre';
-    img.width = 130;
-    img.height = 100;
+    img.src = sucursal.imagen;
+    img.alt = `Sucursal ${sucursal.ciudad}`;
+    img.classList.add('sucursal-img');
 
-    const infoBox = document.createElement('div');
-    infoBox.className = 'border p-3 rounded border-primary';
-    infoBox.style.maxWidth = '300px';
+    const info = document.createElement('div');
+    info.classList.add('sucursal-info');
 
-    const direccionP = document.createElement('p');
-    direccionP.className = 'mb-1';
-    direccionP.innerHTML = `<strong>Dirección:</strong> ${sucursal.direccion}`;
+    const direccion = document.createElement('p');
+    direccion.innerHTML = `<strong>Dirección:</strong> ${sucursal.direccion}`;
 
-    const ciudadP = document.createElement('p');
-    ciudadP.className = 'mb-0';
-    ciudadP.innerHTML = `<strong>Ciudad:</strong> ${sucursal.ciudad}`;
+    const ciudad = document.createElement('p');
+    ciudad.innerHTML = `<strong>Ciudad:</strong> ${sucursal.ciudad}`;
 
-    infoBox.appendChild(direccionP);
-    infoBox.appendChild(ciudadP);
+    info.appendChild(direccion);
+    info.appendChild(ciudad);
 
     col.appendChild(img);
-    col.appendChild(infoBox);
+    col.appendChild(info);
 
-    row.appendChild(col);
+    container.appendChild(col);
   });
-
-
-  document.querySelector('.container').appendChild(row);
 });

@@ -1,13 +1,14 @@
-/*Titulo*/
+/* Título */
 .page-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin: 30px 0;
-    color: #141010;
-    text-transform: uppercase;
-    font-weight: bold;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 30px 0;
+  color: #141010;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-  /* Imágenes de las sucursales */
+
+/* Imágenes de las sucursales */
 .sucursal-img {
   width: 130px;
   height: 100px;
@@ -21,7 +22,7 @@
   transform: scale(1.05);
 }
 
-/* Contenedores de la  información de las sucursales */
+/* Contenedores de la información de las sucursales */
 .sucursal-info {
   max-width: 300px;
   border: 2px solid #3498db;
