@@ -1,6 +1,24 @@
 # DAW-Trabajo_Practico_Experimental_1
 Creación de un sitio web
 
+Instrucciones para el correcto funcionamiento del repositorio 
+Abre la terminal (PowerShell, CMD o terminal de VS Code) y ejecuta:
+
+    git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
+    cd sitio-web
+
+En Windows
+    python -m venv venv
+    venv\Scripts\activate
+    pip install -r requirements.txt
+    python main.py
+
+En Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    python main.py
+
 Distribución de la Actividad:
 1.	Coordinador general + Página Principal
     •	Diseña y programa la Página Principal del sitio web.
@@ -40,41 +58,46 @@ Distribución de la Actividad:
 
 Estructura que tendrá el proyecto:
 
-sitio-web/
-│
-├── entornoGrupo17/
-|   ├── Include/
-│   ├── Lib/
-│   ├── Scripts/
-│   └── pyvenv.cfg
+├───git/
 |
-├── static/
-│   ├── css/
-|       └── estilos.css            → Estilos generales (colores, tipografías, layout común)
-│   ├── img/
-│       └── [imágenes de uso común o individuales]
-│   └── js/
-|       ├── equipo.js              → JavaScript para generar contenido en equipo.html
-│       ├── promociones.js         → JavaScript para generar contenido en promociones.html
-│       ├── sucursales.js          → JavaScript para generar contenido en sucursales.html
-│       └── login.js               → Validación de usuario en login.html
+├───Sitio_Web_Taller_mecanico.../
+|   |
+|   ├── entornoGrupo17(venv en su defecto)/
+|   |   ├── Include/
+|   │   ├── Lib/
+|   │   ├── Scripts/
+|   │   └── pyvenv.cfg
+|   |
+|   ├── static/
+|   │   ├── css/
+|   |       └── estilos.css            → Estilos generales (colores, tipografías, layout común)
+|   │   ├── img/
+|   │       └── [imágenes de uso común o individuales]
+|   │   └── js/
+|   |       ├── equipo.js              → JavaScript para generar contenido en equipo.html
+|   │       ├── promociones.js         → JavaScript para generar contenido en promociones.html
+|   │       ├── sucursales.js          → JavaScript para generar contenido en sucursales.html
+|   │       └── login.js               → Validación de usuario en login.html
+|   |
+|   ├── templates/
+|   │   ├── shared/
+|   │       ├── header.html            → Encabezado común (menú de navegación)
+|   │       └── footer.html            → Pie de página común
+|   |   ├── index.html                 → Página Principal (Persona 1)
+|   |   ├── nosotros.html              → Página de Nosotros (Persona 2)
+|   |   ├── equipo.html                → Página de Equipo (Persona 3)
+|   |   ├── clientes.html              → Página de Clientes (Persona 4)
+|   |   ├── promociones.html           → Página de Promociones (Persona 5)
+|   |   ├──  productos.html            → Página de Productos (Persona 5)
+|   |   ├── sucursales.html            → Página de Sucursales (Persona 6)
+|   |   └── login.html                 → Página de Login (Persona 6)
+|   │
+|   ├── .gitignore
+|   │
+|   ├── main.py 
+|   |
+|   └── requirements.txt
 |
-├── templates/
-│   ├── shared/
-│       ├── header.html            → Encabezado común (menú de navegación)
-│       └── footer.html            → Pie de página común
-|   ├── index.html                 → Página Principal (Persona 1)
-|   ├── nosotros.html              → Página de Nosotros (Persona 2)
-|   ├── equipo.html                → Página de Equipo (Persona 3)
-|   ├── clientes.html              → Página de Clientes (Persona 4)
-|   ├── promociones.html           → Página de Promociones (Persona 5)
-|   ├──  productos.html            → Página de Productos (Persona 5)
-|   ├── sucursales.html            → Página de Sucursales (Persona 6)
-|   └── login.html                 → Página de Login (Persona 6)
-│
-│
-├── main.py 
-│
 └── README.md                      → (Opcional) Notas o instrucciones del grupo
 
 Dado que no se puede usar backend, se recomienda usar JavaScript para insertar el header y
@@ -93,4 +116,3 @@ Cada persona puede hacer esto en su propia página así:
         
     {% include 'shared/footer.html' %}
 </body>
-
