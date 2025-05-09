@@ -2,18 +2,19 @@
 .page-title {
   text-align: center;
   font-size: 2.5rem;
-  margin: 100px 0;
+  margin: 101px 0;
   color: #141010;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: underline;
+  
 
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 110 vh;
+  height: 100 vh;
   background-color: #fff;
 
 }
@@ -50,6 +51,7 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+  text-align: right; /* Alinea el texto a la derecha */
 }
 
 button {
