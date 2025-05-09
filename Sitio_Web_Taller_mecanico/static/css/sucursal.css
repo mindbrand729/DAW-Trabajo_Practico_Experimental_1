@@ -9,18 +9,13 @@
 }
 /* Para cada  sucursal */
  .sucursal-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  #team-container {
-  display: flex;
   justify-content: center;
   gap: 20px; 
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+  margin-bottom: 20px;
+
 }
- }
+
 /* Imágenes de las sucursales */
 .sucursal-img {
   width: 130px;
