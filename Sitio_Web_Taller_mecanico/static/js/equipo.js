@@ -22,7 +22,7 @@ const teamMembers = [
         name: "Ana Martínez",
         role: "Asesora de Servicio",
         bio: "Encargada de atención al cliente y diagnóstico inicial de problemas automotrices.",
-        image: "asesora.jpg"
+        image: "asesora8.jpg"
     },
     {
         name: "Roberto Sánchez",
@@ -34,7 +34,19 @@ const teamMembers = [
         name: "Diana Torres",
         role: "Gerente de Taller",
         bio: "Coordina todas las operaciones del taller para garantizar un servicio de calidad.",
-        image: "gerente.jpg"
+        image: "gerente7.jpg"
+    },
+    {
+        name: "Peter Smith",
+        role: "Técnico de Mantenimiento",
+        bio: "Realiza el mantenimiento y reparación de vehículos, asegurando que todos los sistemas funcionen correctamente.",
+        image: "mecanico5.jpg"
+    },
+    {
+        name: "Alice Brown",
+        role: "Personal de Recepción",
+        bio: "Atiende a los clientes, gestiona citas y asegura una comunicación eficiente entre el taller y los usuarios.",
+        image: "recepcionista6.jpg"
     }
 ];
 
