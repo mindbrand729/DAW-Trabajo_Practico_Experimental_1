@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Login</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
     <body>
         {% include 'shared/header.html' %}
         
         <main>
 
-        <!-- Aquí va el contenido de la pagina -->
+          <h1 class="page-title">LOGIN</h1>
+          <div class="team-grid" id="team-container"></div>
             
         </main>
         
         {% include 'shared/footer.html' %}
+        <script src="{{ url_for('static', filename='js/login.js') }}"></script>
     </body>
 </html>
