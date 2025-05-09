@@ -2,18 +2,19 @@
 Creación de un sitio web
 
 Instrucciones para el correcto funcionamiento del repositorio 
-Abre la terminal (PowerShell, CMD o terminal de VS Code) y ejecuta:
+
+En Windows abre la terminal (PowerShell, CMD o terminal de VS Code) y ejecuta:
 
     git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
     cd sitio-web
-
-En Windows
     python -m venv venv
     venv\Scripts\activate
     pip install -r requirements.txt
     python main.py
 
-En Linux
+En Linux abre la terminal y ejecuta:
+    git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
+    cd sitio-web
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
