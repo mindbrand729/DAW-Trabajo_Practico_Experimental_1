@@ -15,11 +15,11 @@
   width: 300px;
   text-align: center;
 }
-  .login-container h2 {
+.login-container h2 {
   margin-bottom: 20px;
   color: #333;
 }
-  .login-container input {
+.login-container input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -27,7 +27,7 @@
   border-radius: 4px;
   box-sizing: border-box;
 }
-  .login-container button {
+.login-container button {
   width: 100%;
   padding: 10px;
   background-color: #3498db;
