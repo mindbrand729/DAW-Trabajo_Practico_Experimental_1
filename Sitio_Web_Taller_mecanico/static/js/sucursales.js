@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const img = document.createElement('img');
     img.src = sucursal.imagen;
-    img.alt = `Sucursal ${sucursal.ciudad}`;
+    img.alt = `sucursal ${sucursal.ciudad}`;
     img.classList.add('sucursal-img');
 
     const info = document.createElement('div');
