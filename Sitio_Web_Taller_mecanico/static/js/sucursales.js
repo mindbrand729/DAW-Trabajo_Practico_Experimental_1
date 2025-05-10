@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
   const sucursales = [
-    { imagen: 'static/images/1.jpg', direccion: 'Av. Alvaro Ochoa', ciudad: 'Machala' },
-    { imagen: 'static/images/2.jpg', direccion: 'Av. Garcias 34', ciudad: 'Machala' },
-    { imagen: 'static/images/3.jpg', direccion: 'Av. Principal Cruz Vera', ciudad: 'Machala' },
-    { imagen: 'static/images/4.jpg', direccion: 'Av. Ochoa Leon', ciudad: 'Machala' },
-    { imagen: 'static/images/5.jpg', direccion: 'Av. Morales 234', ciudad: 'Machala' }
+    { imagen: '1.jpg', direccion: 'Av. Alvaro Ochoa', ciudad: 'Machala' },
+    { imagen: '2.jpg', direccion: 'Av. Garcias 34', ciudad: 'Machala' },
+    { imagen: '3.jpg', direccion: 'Av. Principal Cruz Vera', ciudad: 'Machala' },
+    { imagen: '4.jpg', direccion: 'Av. Ochoa Leon', ciudad: 'Machala' },
+    { imagen: '55.jpg', direccion: 'Av. Morales 234', ciudad: 'Machala' }
   ];
 
   const container = document.getElementById('team-container');
