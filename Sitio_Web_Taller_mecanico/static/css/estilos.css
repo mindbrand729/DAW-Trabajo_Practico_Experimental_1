@@ -30,3 +30,19 @@ main {
 .bloque {
     padding: 100px 100px;
 }
+
+.title_mv {
+  text-align: center;
+  font-style: italic;
+  font-family: 'Arial', sans-serif;
+  font-size: 4rem;
+  padding: 10px 0px;
+}
+
+.title_mv .car {
+  color: red;
+}
+
+.title_mv .epair {
+  color: blue;
+}

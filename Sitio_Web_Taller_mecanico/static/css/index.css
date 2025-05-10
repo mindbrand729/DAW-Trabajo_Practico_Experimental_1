@@ -118,31 +118,15 @@
   to { transform: translateX(100%); opacity: 0; }
 }
 
-.title_mv {
-  text-align: center;
-  padding: 80px 0px 20px 0px;
-  font-style: italic;
-  font-family: 'Arial', sans-serif;
-  font-size: 4rem;
-}
-
-.title_mv .car {
-  color: red;
-}
-
-.title_mv .epair {
-  color: blue;
-}
-
 .mision-vision {
-    padding: 30px 10px;
+    padding: 60px 40px;
     background-color: #f9f9f9;
     text-align: center;
     display: flex;
 }
 
 .space {
-    padding: 0px 5px;
+    padding: 0px 20px;
 }
 
 .mision-vision .contenido {
@@ -173,10 +157,12 @@
 .mision-vision h3 {
     color: #FF6F61;
     margin-bottom: 15px;
+    font-size: 2rem;
 }
   
 .mision-vision p {
     color: #333;
     line-height: 1.6;
+    font-size: 1.5rem;
 }
   

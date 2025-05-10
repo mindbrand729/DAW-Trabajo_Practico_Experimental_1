@@ -1,0 +1,59 @@
+/* Página Nosotros */
+.pagina-nosotros {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-empresa h2 {
+  margin-bottom: 5px;
+}
+
+.contenido-central {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.mision, .vision {
+  text-align: left;
+  width: 35%;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 0 15px;
+  color: #222;
+  text-align: center;
+}
+
+.imagen-empresa {
+  width: 25%;
+  text-align: center;
+}
+
+.imagen-empresa img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.fundacion {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenido-central {
+    flex-direction: column;
+  }
+
+  .mision, .vision, .imagen-empresa {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
