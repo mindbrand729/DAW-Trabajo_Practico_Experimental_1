@@ -12,14 +12,16 @@ function showImage(index, direction = "right") {
 
   const currentImg = carouselTrack.querySelector(".carousel-img");
   if (currentImg) {
+    carouselTrack.insertBefore(newImg, currentImg);
     // Animación de salida según dirección opuesta
     currentImg.classList.add(direction === "right" ? "slide-out-left" : "slide-out-right");
     currentImg.addEventListener("animationend", () => {
-      currentImg.remove(); // elimina cuando termine la animación
-    });
+      currentImg.remove();
+    }, { once: true });
+  } else {
+    carouselTrack.appendChild(newImg); // primera vez
   }
 
-  carouselTrack.appendChild(newImg);
   blurBackground.style.backgroundImage = `url(${images[index]})`;
 }
 
