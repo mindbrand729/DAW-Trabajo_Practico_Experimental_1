@@ -1,6 +1,6 @@
 /*Titulo del Login*/
 .page-title {
-  
+
   text-align: center;
   font-size: 2.5rem;
   margin: 30px 0;
@@ -11,7 +11,7 @@
 
 
 }
-html, body {
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -20,7 +20,7 @@ html, body {
 }
 .login-container {
   background-color: #DDFFAB;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 100%;
@@ -28,11 +28,7 @@ html, body {
   text-align: center;
 }
 
-h1 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-}
+
 .input-group {
   margin-bottom: 15px;
   text-align: left;
