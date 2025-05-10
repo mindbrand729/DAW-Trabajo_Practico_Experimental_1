@@ -118,6 +118,21 @@
   to { transform: translateX(100%); opacity: 0; }
 }
 
+.title_mv {
+  text-align: center;
+  padding: 80px 0px 20px 0px;
+  font-style: italic;
+  font-family: 'Arial', sans-serif;
+  font-size: 4rem;
+}
+
+.title_mv .car {
+  color: red;
+}
+
+.title_mv .epair {
+  color: blue;
+}
 
 .mision-vision {
     padding: 30px 10px;

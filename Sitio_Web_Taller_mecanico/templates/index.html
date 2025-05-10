@@ -6,7 +6,8 @@
   <title>Página Principal</title>
   <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/carrusel.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  <link rel="preload" href="{{ url_for('static', filename='img/carrusel/climatizacion.jpg') }}" as="image">
 </head>
     <body>
         {% include 'shared/header.html' %}
@@ -18,11 +19,15 @@
                 <button id="prevBtn">&#10094;</button>
                 <button id="nextBtn">&#10095;</button>
             </section>
-            <div class="bloque"><p></p></div>
+            <div class="title_mv">
+                <h3>
+                    <span class="car">Car</span><span class="epair">epair</span>
+                </h3>
+            </div>
             <section class="mision-vision">
                 <div class="mision">
-                    <h3>MISIÓN</h3>
-                    <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. 
+                    <h3 id="mision-title">MISIÓN</h3>
+                    <p aria-labelledby="mision-title">Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. 
                         Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo,
                         haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de 
                         la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del 
@@ -38,8 +43,8 @@
                 </div>
                 <div class="space"><p></p></div>
                 <div class="vision">
-                    <h3>VISIÓN</h3>
-                    <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. 
+                    <h3 id="vision-title">VISIÓN</h3>
+                    <p aria-labelledby="vision-title">Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. 
                         Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo,
                         haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de 
                         la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del 
