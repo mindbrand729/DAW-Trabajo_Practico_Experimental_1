@@ -57,6 +57,44 @@ Distribución de la Actividad:
     •	Programa la Página de Login con validación (usuario: unemi, contraseña: web2025).
     •	Explica ambas páginas en el informe y muestra su funcionamiento en el video.
 
+Lista de Productos para el Taller Mecánico
+🔋 Accesorios y componentes básicos
+    •	Baterías para autos (convencionales y AGM)
+    •	Bombillas y faros LED/Halógenos
+    •	Escobillas limpiaparabrisas
+    •	Filtros de aire
+    •	Filtros de aceite
+    •	Filtros de combustible
+🛢️ Lubricantes y fluidos
+    •	Aceite de motor (sintético y semisintético)
+    •	Refrigerante / Anticongelante
+    •	Líquido de frenos
+    •	Aceite para transmisión automática/manual
+    •	Aditivos para motor y combustible
+🧰 Herramientas y kits
+    •	Kits de herramientas básicas para auto
+    •	Gatos hidráulicos
+    •	Compresores portátiles de aire
+    •	Cables de arranque (booster)
+    •	Llaves de ruedas telescópicas
+🚗 Repuestos comunes
+    •	Pastillas de freno
+    •	Discos de freno
+    •	Amortiguadores
+    •	Correas de distribución y accesorios
+    •	Bujías (convencionales e iridium)
+🎯 Accesorios para comodidad y estilo
+    •	Alfombras para auto (universales y a medida)
+    •	Fundas para asientos
+    •	Cubrevolantes
+    •	Organizadores para baúl o asientos
+    •	Cámaras de retroceso o sensores
+🧼 Cuidado del vehículo
+    •	Cera y shampoo para auto
+    •	Limpiador de interiores
+    •	Paños de microfibra
+    •	Desengrasante para motor
+    •	Ambientadores para auto
 
 Estructura que tendrá el proyecto:
 
