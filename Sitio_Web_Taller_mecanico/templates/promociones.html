@@ -6,16 +6,19 @@
   <title>Página Promociones</title>
   <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/promociones.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
     <body>
         {% include 'shared/header.html' %}
         
         <main>
 
-            <!-- Aquí va el contenido de la pagina -->
+            <div id="app"></div>
             
         </main>
         
         {% include 'shared/footer.html' %}
+        <script src="{{ url_for('static', filename='js/promociones.js') }}"></script>
     </body>
 </html>

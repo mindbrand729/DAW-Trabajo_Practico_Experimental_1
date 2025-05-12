@@ -1,0 +1,150 @@
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.producto {
+    width: calc(50% - 15px);
+    border: none;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.producto:nth-child(2n+1) {
+    border-left: 4px solid var(--color-primary);
+}
+
+.producto:nth-child(2n+2) {
+    border-left: 4px solid var(--color-accent);
+}
+
+.producto-imagen-container {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 3px solid var(--color-dark);
+}
+
+.producto-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.producto:hover .producto-imagen {
+    transform: scale(1.1);
+}
+
+.producto-detalles {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-codigo {
+    color: var(--color-dark);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.producto-nombre {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.producto-stock {
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.producto-iva {
+    color: #888;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.producto-precio {
+    font-size: 22px;
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.producto-btn {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    background-color: var(--color-dark);
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.producto-btn:hover {
+    background-color: #c28aff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .producto {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .producto {
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        flex-direction: column;
+    }
+    
+    .producto-imagen-container {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .producto-detalles {
+        text-align: center;
+    }
+    
+    .producto-btn {
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+}

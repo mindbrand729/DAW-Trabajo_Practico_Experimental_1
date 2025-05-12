@@ -7,12 +7,13 @@
   <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/equipo.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
     <body>
         {% include 'shared/header.html' %}
         <main>
 
-            <h1 class="page-title">"NUESTRO EQUIPO"</h1>
+            <div class="container"><h1><i class="fa-solid fa-screwdriver-wrench"></i> Nuestro Equipo</h1></div>
             <div class="team-grid" id="team-container"></div>
             </div>
 

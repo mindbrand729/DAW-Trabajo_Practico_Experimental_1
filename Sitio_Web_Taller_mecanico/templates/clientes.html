@@ -7,13 +7,14 @@
   <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/clientes.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
     <body>
         {% include 'shared/header.html' %}
         
         <main>
             
-            <h1 class="page-title">"Clientes"</h1>
+            <div class="container"><h1><i class="fa-solid fa-address-book"></i> Nuestros Clientes</h1></div>
             <div class="clientes-grid" id="cliente-container"></div>
             
         </main>

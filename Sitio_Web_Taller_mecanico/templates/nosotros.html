@@ -7,13 +7,15 @@
   <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/nosotros.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="preload" href="{{ url_for('static', filename='img/1.webp') }}" as="image">
 </head>
     <body>
         {% include 'shared/header.html' %}
         
         <main class="pagina-nosotros">
-
+            
+            <div class="container"><h1><i class="fa-solid fa-user"></i> Nosotros</h1></div>
             <section class="info-empresa">
                 <div class="title_mv">
                     <h3><span class="car">Car</span><span class="epair">epair</span></h3>
