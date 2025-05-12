@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const sucursales = [
+const sucursales = [
     { imagen: '/static/img/sucursal/1.jpg', direccion: 'Av. Alvaro Ochoa', ciudad: 'Machala' },
     { imagen: '/static/img/sucursal/2.jpg', direccion: 'Av. Garcias 34', ciudad: 'Machala' },
     { imagen: '/static/img/sucursal/3.jpg', direccion: 'Av. Principal Cruz Vera', ciudad: 'Machala' },
     { imagen: '/static/img/sucursal/4.jpg', direccion: 'Av. Ochoa Leon', ciudad: 'Machala' },
     { imagen: '/static/img/sucursal/5.jpg', direccion: 'Av. Morales 234', ciudad: 'Machala' }
-  ];
+];
 
+document.addEventListener('DOMContentLoaded', function() {
   const container = document.getElementById('team-container');
 
   sucursales.forEach(sucursal => {

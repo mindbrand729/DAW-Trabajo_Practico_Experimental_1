@@ -7,7 +7,7 @@
   <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-  <link rel="preload" href="{{ url_for('static', filename='img/productos/inicio.jpg') }}" as="image">
+  <link rel="preload" href="{{ url_for('static', filename='img/inicio.jpg') }}" as="image">
 </head>
     <body>
         {% include 'shared/header.html' %}
@@ -50,20 +50,6 @@
         </main>
 
         {% include 'shared/footer.html' %}
-        <script>
-            const images = [
-              "{{ url_for('static', filename='img/productos/inicio.jpg') }}",
-              "{{ url_for('static', filename='img/productos/Correas_de_distribucion.jpg') }}",
-              "{{ url_for('static', filename='img/productos/Compresores_portatiles.jpg') }}",
-              "{{ url_for('static', filename='img/productos/Aceite_para_transmision.jpg') }}",
-              "{{ url_for('static', filename='img/productos/Discos_de_freno.jpg') }}",
-              "{{ url_for('static', filename='img/productos/Llaves_de_ruedas.jpg') }}",
-              "{{ url_for('static', filename='img/productos/Filtros_de_aire.jpg') }}",
-              "{{ url_for('static', filename='img/productos/Bombillas_LEDHalogenos.jpg') }}",
-              "{{ url_for('static', filename='img/productos/Cubrevolantes.jpg') }}",
-              "{{ url_for('static', filename='img/productos/Kits_de_herramientas.jpg') }}",
-            ];
-        </script>
         <script src="{{ url_for('static', filename='js/carrusel.js') }}"></script>
     </body>
 </html>

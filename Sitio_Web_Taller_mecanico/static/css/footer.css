@@ -54,7 +54,7 @@ footer {
   
 .footer1 .red-social a:hover {
     color: #555;
-;
+
 }
   
 .footer2 {
@@ -66,14 +66,14 @@ footer {
   
 .footer2 small {
     font-size: 15px;
-  }
+}
   
-  @media screen and (max-width:991px) {
+@media screen and (max-width:991px) {
     .footer1 {
-      width: 90%;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(1, lfr);
-      grid-gap: 3px;
-      padding: 0px 0px;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, lfr);
+        grid-gap: 3px;
+        padding: 0px 0px;
     }
-  }
+}
