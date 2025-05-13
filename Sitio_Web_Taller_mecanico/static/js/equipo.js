@@ -4,7 +4,7 @@ const teamMembers = [
         name: "Carlos Rodríguez",
         role: "Mecánico Jefe",
         bio: "Con más de 15 años de experiencia en reparación automotriz. Especialista en sistemas de inyección electrónica.",
-        image: "mecanico1.jpg"
+        image: "MecánicoJefe.jpg"
     },
     {
         name: "Laura González",
