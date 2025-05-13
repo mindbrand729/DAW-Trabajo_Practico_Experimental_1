@@ -25,14 +25,14 @@ function loadcustomerslist() {
     clienteslist.forEach(c => {
         // Crear la tarjeta para cada cliente
         const clienteCard = document.createElement('div');
-        clienteCard.className = 'card-cliente';
+        clienteCard.className = `card-cliente ${c.nombre.toLowerCase()}`;
         
         // Crear la estructura interna de la tarjeta cliente
         clienteCard.innerHTML = `
                 <div class="cliente-image">
                     <img src="${getImagePath(c.image)}" alt="${c.nombre}">
                 </div>
-                <div class="cliente-info" style="text-align: center">
+                <div class="cliente-info">
                     <h3>${c.nombre}</h3>
                     <h4>${c.email}</h4>
                     <p>${c.ci}</p>
@@ -47,7 +47,7 @@ function loadcustomerslist() {
 
 // Función para obtener la ruta correcta de las imágenes
 function getImagePath(imageName) {
-    // Ajusta esta ruta según la estructura de carpetas de tu proyecto
+    // Ajusta la ruta según la estructura de carpetas de tu proyecto
     return `static/img/clientes/${imageName}`;
 }
 
