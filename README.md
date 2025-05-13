@@ -18,16 +18,13 @@ Opción 1: Desde Google Drive:
 
 Opción 2: Desde GitHub (Archivo ZIP):
     Ingrese al repositorio:
-
-        https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1
-        
-    Haga clic en Code → Download ZIP.
-    Descomprima la carpeta del proyecto.
+        Haga clic en Code → Download ZIP.
+        Descomprima la carpeta del proyecto.
 
 Opción 3: Clonación con Git (recomendado):
     En Windows abre la terminal (PowerShell, CMD o terminal de VS Code) y ejecute:
 
-        git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
+    git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
 
 # Crear y activar el entorno virtual
 Acceder a la carpeta del proyecto:
@@ -39,13 +36,14 @@ Crear el entorno virtual
     python -m venv venv
 
 Activar entorno virtual:
-    En Windows:
 
-        venv\Scripts\activate
+En Windows:
+
+    venv\Scripts\activate
     
-    En Mac/Linux:
-    
-        source venv/bin/activate
+En Mac/Linux:
+
+    source venv/bin/activate
 
 Problemas comunes en Windows (PowerShell)
 
@@ -54,21 +52,22 @@ Si aparece un error como:
     File ...\Activate.ps1 cannot be loaded because running scripts is disabled...
 
 Windows PowerShell está bloqueando la ejecución de scripts. Soluciones:
-    Opción 1: Activar usando cmd.exe
-        En lugar de usar PowerShell, abre una ventana de comandos normal (cmd) e intenta activar el entorno:
 
-            venv\Scripts\activate
-        
-    Opción 2: Cambiar la política de PowerShell (temporal o permanente)
-        Temporal (sólo para esta sesión):
-            
-            Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-            venv\Scripts\activate
-        
-        Permanente (menos recomendable en equipos institucionales):
-        
-            Set-ExecutionPolicy RemoteSigned
-            venv\Scripts\activate
+Opción 1: Activar usando cmd.exe
+En lugar de usar PowerShell, abre una ventana de comandos normal (cmd) e intenta activar el entorno:
+
+    venv\Scripts\activate
+
+Opción 2: Cambiar la política de PowerShell (temporal o permanente)
+Temporal (sólo para esta sesión):
+    
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+    venv\Scripts\activate
+
+Permanente (menos recomendable en equipos institucionales):
+
+    Set-ExecutionPolicy RemoteSigned
+    venv\Scripts\activate
 
 # Instalar dependencias
 Una vez activado el entorno virtual, ejecuta:
@@ -90,7 +89,7 @@ Por defecto, Flask debería iniciar en:
 
 Copie esa dirección en su navegador para ver la página principal.
 
-Distribución de la Actividad:
+# Distribución de la Actividad:
 1.	Coordinador general + Página Principal
     •	Diseña y programa la Página Principal del sitio web.
     •	Asegura que todas las páginas tengan coherencia visual y estructura.
