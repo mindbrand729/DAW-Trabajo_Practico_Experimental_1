@@ -1,7 +1,7 @@
 let current = 0;
 const images = [
   { url: "static/img/inicio.jpg" },
-  { url: "https://www.boschautopartes.mx/o/commerce-media/accounts/-1/images/5119159?download=true" },
+  { url: "https://http2.mlstatic.com/D_NQ_NP_741514-MLU74390597813_022024-O.webp" },
   { url: "https://www.ro-des.com/images/mecanica/bomba_agua.jpg" },
   { url: "https://m.media-amazon.com/images/I/71xgxn8pmOL._AC_UF894,1000_QL80_.jpg" },
   { url: "https://diagnosticogt.web.app/assets/img/all/portada-banner.jpg" },
