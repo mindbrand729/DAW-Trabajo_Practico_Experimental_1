@@ -1,25 +1,94 @@
 # DAW-Trabajo_Practico_Experimental_1
 Creación de un sitio web
 
-Instrucciones para el correcto funcionamiento del repositorio 
+Instrucciones para la ejecución y el correcto funcionamiento del repositorio
 
-En Windows abre la terminal (PowerShell, CMD o terminal de VS Code) y ejecuta:
+Requisitos previos
 
-    git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
-    cd Sitio_Web_Taller_mecanico
+Antes de ejecutar el proyecto, asegúrese de tener lo siguiente instalado:
+
+    Python 3.9 o superior (recomendado: Python 3.11)
+    pip (gestor de paquetes de Python)
+    Opcional: Visual Studio Code o cualquier editor de texto
+    Git (si va a clonar el repositorio directamente desde GitHub)
+
+# Cómo Obtener el Proyecto
+Opción 1: Desde Google Drive:
+    Descargue y descomprima la carpeta DAW-Trabajo_Practico_Experimental_1... en su computadora.
+
+Opción 2: Desde GitHub (Archivo ZIP):
+    Ingrese al repositorio:
+
+        https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1
+        
+    Haga clic en Code → Download ZIP.
+    Descomprima la carpeta del proyecto.
+
+Opción 3: Clonación con Git (recomendado):
+    En Windows abre la terminal (PowerShell, CMD o terminal de VS Code) y ejecute:
+
+        git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
+
+# Crear y activar el entorno virtual
+Acceder a la carpeta del proyecto:
+
+    cd DAW-Trabajo_Practico_Experimental_1/Sitio_Web_Taller_mecanico
+
+Crear el entorno virtual
+
     python -m venv venv
-    venv\Scripts\activate
+
+Activar entorno virtual:
+    En Windows:
+
+        venv\Scripts\activate
+    
+    En Mac/Linux:
+    
+        source venv/bin/activate
+
+Problemas comunes en Windows (PowerShell)
+
+Si aparece un error como:
+
+    File ...\Activate.ps1 cannot be loaded because running scripts is disabled...
+
+Windows PowerShell está bloqueando la ejecución de scripts. Soluciones:
+    Opción 1: Activar usando cmd.exe
+        En lugar de usar PowerShell, abre una ventana de comandos normal (cmd) e intenta activar el entorno:
+
+            venv\Scripts\activate
+        
+    Opción 2: Cambiar la política de PowerShell (temporal o permanente)
+        Temporal (sólo para esta sesión):
+            
+            Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+            venv\Scripts\activate
+        
+        Permanente (menos recomendable en equipos institucionales):
+        
+            Set-ExecutionPolicy RemoteSigned
+            venv\Scripts\activate
+
+# Instalar dependencias
+Una vez activado el entorno virtual, ejecuta:
+    
     pip install -r requirements.txt
+
+Si aparece un error indicando que Flask no está instalado, ejecuta:
+
+    pip install Flask
+
+# Ejecutar la aplicación Flask
+Desde la misma terminal ejecuta:
+
     python main.py
 
-En Linux abre la terminal y ejecuta:
+Por defecto, Flask debería iniciar en:
+    
+    http://127.0.0.1:5000
 
-    git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
-    cd Sitio_Web_Taller_mecanico
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    python main.py
+Copie esa dirección en su navegador para ver la página principal.
 
 Distribución de la Actividad:
 1.	Coordinador general + Página Principal
