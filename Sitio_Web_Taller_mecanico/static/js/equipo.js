@@ -7,46 +7,46 @@ const teamMembers = [
         image: "MecánicoJefe.jpg"
     },
     {
-        name: "Laura González",
+        name: "Lauro González",
         role: "Especialista en Transmisiones",
         bio: "Ingeniera automotriz con especialización en sistemas de transmisión automática y manual.",
-        image: "mecanico2.jpg"
+        image: "EspecialistaenTransmisiones.jpg"
     },
     {
         name: "Miguel Hernández",
         role: "Técnico Electricista",
         bio: "Experto en sistemas eléctricos y electrónicos de vehículos modernos.",
-        image: "mecanico3.jpg"
+        image: "TécnicoElectricista.jpg"
     },
     {
         name: "Ana Martínez",
         role: "Asesora de Servicio",
         bio: "Encargada de atención al cliente y diagnóstico inicial de problemas automotrices.",
-        image: "asesora8.jpg"
+        image: "AsesoradeServicio.jpg"
     },
     {
         name: "Roberto Sánchez",
         role: "Especialista en Frenos",
         bio: "Certificado en sistemas de frenos ABS y convencionales para todo tipo de vehículos.",
-        image: "mecanico4.jpg"
+        image: "EspecialistaenFrenos.jpg"
     },
     {
         name: "Diana Torres",
-        role: "Gerente de Taller",
+        role: "Gerenta de Taller",
         bio: "Coordina todas las operaciones del taller para garantizar un servicio de calidad.",
-        image: "gerente7.jpg"
+        image: "GerentadeTaller.jpg"
     },
     {
         name: "Peter Smith",
         role: "Técnico de Mantenimiento",
         bio: "Realiza el mantenimiento y reparación de vehículos, asegurando que todos los sistemas funcionen correctamente.",
-        image: "mecanico5.jpg"
+        image: "TécnicodeMantenimiento.jpg"
     },
     {
         name: "Alice Brown",
         role: "Personal de Recepción",
         bio: "Atiende a los clientes, gestiona citas y asegura una comunicación eficiente entre el taller y los usuarios.",
-        image: "recepcionista6.jpg"
+        image: "PersonaldeRecepción.jpg"
     }
 ];
 
