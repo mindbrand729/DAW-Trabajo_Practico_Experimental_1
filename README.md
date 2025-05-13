@@ -1,6 +1,4 @@
 # DAW-Trabajo_Practico_Experimental_1
-Creación de un sitio web
-
 Instrucciones para la ejecución y el correcto funcionamiento del repositorio
 
 Requisitos previos
@@ -101,45 +99,62 @@ Copie esa dirección en su navegador para ver la página principal.
 1.	Coordinador general + Página Principal
 
     •	Diseña y programa la Página Principal del sitio web.
+
     •	Asegura que todas las páginas tengan coherencia visual y estructura.
+    
     •	Redacta: Carátula, Introducción, Objetivos del informe.
+    
     •	Supervisa el cumplimiento de plazos y la integración del trabajo final.
 
 2.	Página de Nosotros + Edición del Informe
 
     •	Desarrolla la Página de Nosotros.
+    
     •	Redacta la explicación de su trabajo con capturas para el informe.
+    
     •	Se encarga de la edición y compilación del informe completo en PDF.
 
 3.	Página de Equipo (JavaScript) + Conclusiones
 
     •	Crea dinámicamente la Página de Equipo usando JavaScript.
+    
     •	Explica su código y resultados en el informe.
+    
     •	Redacta las Conclusiones del grupo en el informe.
 
 4.	Página de Clientes + Coordinador del video
 
     •	Diseña la Página de Clientes.
+    
     •	Documenta cómo se hizo con capturas y explicación técnica.
+    
     •	Organiza la carga del video grupal (ver detalles más abajo).
+    
         	Presentación breve de cada integrante con cámara encendida.
+    
         	Mostrar y explicar su parte del trabajo (pantalla compartida).
+    
         	Navegación completa del sitio web terminado.
+    
         	Cada integrante debe hablar y mostrar código + resultado.
 
 5.	Página de Promociones (JavaScript) + Página de Productos
 
     •	Implementa la Página de Promociones con JavaScript.
+    
     •	Desarrolla también la Página de Productos.
+    
     •	Redacta su parte en el informe con capturas.
 
 6.	Página de Sucursales (JavaScript) + Página de Login
 
     •	Crea la Página de Sucursales usando JavaScript.
+    
     •	Programa la Página de Login con validación (usuario: unemi, contraseña: web2025).
+    
     •	Explica ambas páginas en el informe y muestra su funcionamiento en el video.
 
-Estructura que tendrá el proyecto:
+# Estructura que tendrá el proyecto:
 
 ├───git/
 |
@@ -189,6 +204,7 @@ footer dinámicamente desde los archivos shared/header.html y shared/footer.html
 Cada persona puede hacer esto en su propia página así:
 
 <body>
+
     {% include 'shared/header.html' %}
         
         <main>
@@ -198,4 +214,5 @@ Cada persona puede hacer esto en su propia página así:
         </main>
         
     {% include 'shared/footer.html' %}
+
 </body>
