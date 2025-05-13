@@ -17,11 +17,11 @@ Descargue y descomprima la carpeta DAW-Trabajo_Practico_Experimental_1... en su 
 
 Opción 2: Desde GitHub (Archivo ZIP):
 
-    •	Ingrese al repositorio:
+Ingrese al repositorio:
 
-    •	Haga clic en Code → Download ZIP.
+Haga clic en Code → Download ZIP.
 
-    •	Descomprima la carpeta del proyecto.
+Descomprima la carpeta del proyecto.
 
 Opción 3: Clonación con Git (recomendado):
 
@@ -131,14 +131,6 @@ Copie esa dirección en su navegador para ver la página principal.
     •	Documenta cómo se hizo con capturas y explicación técnica.
     
     •	Organiza la carga del video grupal (ver detalles más abajo).
-    
-        	Presentación breve de cada integrante con cámara encendida.
-    
-        	Mostrar y explicar su parte del trabajo (pantalla compartida).
-    
-        	Navegación completa del sitio web terminado.
-    
-        	Cada integrante debe hablar y mostrar código + resultado.
 
 5.	Página de Promociones (JavaScript) + Página de Productos
 
