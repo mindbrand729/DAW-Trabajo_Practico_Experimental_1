@@ -14,14 +14,19 @@ Antes de ejecutar el proyecto, asegúrese de tener lo siguiente instalado:
 
 # Cómo Obtener el Proyecto
 Opción 1: Desde Google Drive:
+
 Descargue y descomprima la carpeta DAW-Trabajo_Practico_Experimental_1... en su computadora.
 
 Opción 2: Desde GitHub (Archivo ZIP):
+
 Ingrese al repositorio:
+
     Haga clic en Code → Download ZIP.
+
     Descomprima la carpeta del proyecto.
 
 Opción 3: Clonación con Git (recomendado):
+
 En Windows abre la terminal (PowerShell, CMD o terminal de VS Code) y ejecute:
 
     git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
@@ -54,6 +59,7 @@ Si aparece un error como:
 Windows PowerShell está bloqueando la ejecución de scripts. Soluciones:
 
 Opción 1: Activar usando cmd.exe
+
 En lugar de usar PowerShell, abre una ventana de comandos normal (cmd) e intenta activar el entorno:
 
     venv\Scripts\activate
@@ -90,24 +96,31 @@ Por defecto, Flask debería iniciar en:
 
 Copie esa dirección en su navegador para ver la página principal.
 
+
+
+
 # Distribución de la Actividad:
 1.	Coordinador general + Página Principal
+
     •	Diseña y programa la Página Principal del sitio web.
     •	Asegura que todas las páginas tengan coherencia visual y estructura.
     •	Redacta: Carátula, Introducción, Objetivos del informe.
     •	Supervisa el cumplimiento de plazos y la integración del trabajo final.
 
 2.	Página de Nosotros + Edición del Informe
+
     •	Desarrolla la Página de Nosotros.
     •	Redacta la explicación de su trabajo con capturas para el informe.
     •	Se encarga de la edición y compilación del informe completo en PDF.
 
 3.	Página de Equipo (JavaScript) + Conclusiones
+
     •	Crea dinámicamente la Página de Equipo usando JavaScript.
     •	Explica su código y resultados en el informe.
     •	Redacta las Conclusiones del grupo en el informe.
 
 4.	Página de Clientes + Coordinador del video
+
     •	Diseña la Página de Clientes.
     •	Documenta cómo se hizo con capturas y explicación técnica.
     •	Organiza la carga del video grupal (ver detalles más abajo).
@@ -117,11 +130,13 @@ Copie esa dirección en su navegador para ver la página principal.
         	Cada integrante debe hablar y mostrar código + resultado.
 
 5.	Página de Promociones (JavaScript) + Página de Productos
+
     •	Implementa la Página de Promociones con JavaScript.
     •	Desarrolla también la Página de Productos.
     •	Redacta su parte en el informe con capturas.
 
 6.	Página de Sucursales (JavaScript) + Página de Login
+
     •	Crea la Página de Sucursales usando JavaScript.
     •	Programa la Página de Login con validación (usuario: unemi, contraseña: web2025).
     •	Explica ambas páginas en el informe y muestra su funcionamiento en el video.
