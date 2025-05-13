@@ -43,7 +43,7 @@
 /* Información de cada cliente */
 .cliente-info {
     padding: 5px;
-   
+    text-align: center;   
 }
 
 .cliente-info h3 {
