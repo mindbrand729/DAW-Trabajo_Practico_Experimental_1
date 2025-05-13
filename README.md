@@ -15,19 +15,17 @@ Antes de ejecutar el proyecto, asegúrese de tener lo siguiente instalado:
 # Cómo Obtener el Proyecto
 Opción 1: Desde Google Drive:
 
-Descargue y descomprima la carpeta DAW-Trabajo_Practico_Experimental_1... en su computadora.
+    •	Descargue y descomprima la carpeta DAW-Trabajo_Practico_Experimental_1... en su computadora.
 
 Opción 2: Desde GitHub (Archivo ZIP):
 
-Ingrese al repositorio:
-
-    Haga clic en Code → Download ZIP.
-
-    Descomprima la carpeta del proyecto.
+    •	Ingrese al repositorio:
+    •	Haga clic en Code → Download ZIP.
+    •	Descomprima la carpeta del proyecto.
 
 Opción 3: Clonación con Git (recomendado):
 
-En Windows abre la terminal (PowerShell, CMD o terminal de VS Code) y ejecute:
+    •	En Windows abre la terminal (PowerShell, CMD o terminal de VS Code) y ejecute:
 
     git clone https://github.com/mindbrand729/DAW-Trabajo_Practico_Experimental_1.git
 
@@ -42,11 +40,11 @@ Crear el entorno virtual
 
 Activar entorno virtual:
 
-En Windows:
+    •	En Windows:
 
     venv\Scripts\activate
     
-En Mac/Linux:
+    •	En Mac/Linux:
 
     source venv/bin/activate
 
@@ -60,18 +58,18 @@ Windows PowerShell está bloqueando la ejecución de scripts. Soluciones:
 
 Opción 1: Activar usando cmd.exe
 
-En lugar de usar PowerShell, abre una ventana de comandos normal (cmd) e intenta activar el entorno:
+    •	En lugar de usar PowerShell, abre una ventana de comandos normal (cmd) e intenta activar el entorno:
 
     venv\Scripts\activate
 
 Opción 2: Cambiar la política de PowerShell (temporal o permanente)
 
-Temporal (sólo para esta sesión):
+    •	Temporal (sólo para esta sesión):
     
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
     venv\Scripts\activate
 
-Permanente (menos recomendable en equipos institucionales):
+    •	Permanente (menos recomendable en equipos institucionales):
 
     Set-ExecutionPolicy RemoteSigned
     venv\Scripts\activate
